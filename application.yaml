@@ -1,0 +1,26 @@
+app-builder: v0.2.0
+
+application:
+
+  name: IgnisPressEscape
+  asciibanner: assets/banner.txt
+  icon: assets/icon.svg.ico
+  installdir: '%localappdata%\Ignis\IgnisPressEscape'
+
+  pause: true
+
+  startmenu:
+    - IgnisPressEscape-10-2.exe
+    - IgnisPressEscape-30-5.exe
+
+  data:
+    include:
+      - bin
+      - src
+      - IgnisPressEscape*.exe
+
+dependencies:
+  python:
+    - pynput
+    - pyautogui
+    - yagmail
